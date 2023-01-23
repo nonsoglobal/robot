@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBOT</title>
+    <link rel="icon" type="rel" href="./robotimage/robot.jpg">
+    <link rel="stylesheet" href="./BOOSTRAP/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./icofont/icofont.min.css"> -->
+</head>
+
+<style>
+    body{
+        background-color: rgba(205, 92, 92, 0.301);
+    }
+    #mm{
+        background-color: indianred;
+        width: 24em;
+        height: 17em;
+        margin: auto;
+        padding: 1em 3em;
+    }
+    #mm:hover{
+        background-color: gray;
+        transition: all 0.5s ease-in-out;
+    }
+    #io{
+        margin: 2em 0px 0px 6em;
+    }
+    #io:hover{
+        background-color: gold;
+        color: black;
+        transition: all 0.5s ease-in-out;
+    }
+    #ff{
+        height: 7em;
+        width: 7em;
+        background-color: aqua;
+        margin: auto;
+        padding: 17px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    #ff:hover{
+        background-color: gold;
+        transition: all 0.5s ease-in-out;
+    }
+</style>
+<body>
+    <main id="mm">
+        <div id="ff">
+            <img src="./robotimage/robot.jpg" alt="" style="width: 5em; height: 5em;">
+        </div>
+        <h1 id="h1"></h1>
+        <h1 id="h2"></h1>
+        <input class="form-control w-100" type="text" name="" id="inputs" placeholder="asked me anything">
+        <button id="io" onclick="robot()" class="btn btn-danger">summit</button>
+    </main>
+</body>
+
+</html>
+
+<script>
+    let robots = {
+        name: "what is your name",
+        age: "how old are you",
+        city: "where are you from",
+        know: "where are you now",
+        love: "did you love me",
+        gots: "can i be your friend",
+        got: "can we be friend",
+        live: "where do you live",
+        f: "who is your father",
+        h: "who is your mother",
+        g: "did you know SQI",
+        q: "what is the biggest city in nigeria",
+        gg: "did you know rigba",
+        gs: "who is rigba",
+        us: "did you know nonsoglobal",
+        uss: "who is nonsoglobal",
+        yt: "who is president of nigeria",
+        hh: "did you have brother",
+        ghg: "did you have sister",
+    }
+    function robot () {
+        if (inputs.value == robots.ghg) {
+            alert("YEAH")
+            return;
+        }
+        if (inputs.value == robots.yt) {
+            alert("MUHAMMED BUHARI")
+            return;
+        }
+        if (inputs.value == robots.hh) {
+            alert("YEAH")
+            return;
+        }
+        if (inputs.value == robots.us) {
+            alert("YEAH")
+            return;
+        }
+        if (inputs.value == robots.uss) {
+            alert("DEVIL AND GOD")
+            return;
+        }
+        if (inputs.value == robots.gs) {
+            alert("he is my mother friend")
+            return;
+        }
+        if (inputs.value == robots.gg) {
+            alert("yeah")
+            return;
+        }
+        if (inputs.value == robots.q) {
+            alert("IBADAN")
+            return;
+        }
+        if (inputs.value == robots.g) {
+            alert("yeah, that is my hometown")
+            return;
+        }
+        if (inputs.value == robots.h) {
+            alert("nonsoglobal")
+            return;
+        }
+        if (inputs.value == robots.f) {
+            alert("God")
+            return;
+        }
+        if (inputs.value == robots.name) {
+            alert("my name is Robot")
+            return;
+           // res.document.getElementById('h1')
+        }
+        if (inputs.value == robots.live) {
+            alert("i live  at agala, yemetu")
+            return;
+        }
+        if (inputs.value == robots.age) {
+            alert("i am two days old")
+            return;
+           // res.document.getElementById('h1')
+        }
+        if (inputs.value == robots.city) {
+            alert("i am from earth")
+            return;
+           // res.document.getElementById('h1')
+        }
+        if (inputs.value == robots.know) {
+            alert("i am with you")
+            return;
+            //res.document.getElementById('h1')
+        }
+        if (inputs.value == robots.love) {
+            alert("i am shy")
+            return;
+        }
+        if (inputs.value == robots.gots) {
+            alert("yeah, we already friend")
+            return;
+        }
+        if (inputs.value == robots.got) {
+            alert("yeah, we already friend")
+            return;
+        }
+        else if (inputs.value !== robots.data) {
+            alert("i don't understand you")
+            return;
+        }
+    }
+  console.log(document.getElementById("inputs").value);
+  console.log(robots);
+</script>
